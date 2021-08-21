@@ -98,6 +98,9 @@ function App() {
             <Route path="/edit-profile/:id">
               <Editprofile newlist={newlist} />
             </Route>
+            <Route exact path = "/">
+              <Redirect to = "/Dashboard"/>
+            </Route>
           </Switch>
         </div>
         {/*creating a copyright content at the bottom of screen */}
